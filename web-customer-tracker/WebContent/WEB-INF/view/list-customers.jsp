@@ -54,7 +54,10 @@
 						</tr>
 					</c:forEach>
 				</table>
-			
+				
+				<c:if test="${empty customers}">
+					<p>No customers found.</p>
+				</c:if>
 			</div>
 		</div>
 	</body>
